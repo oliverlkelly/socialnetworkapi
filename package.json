@@ -1,0 +1,20 @@
+{
+  "name": "socialnetworkapi",
+  "version": "1.0.0",
+  "description": "socialnetworkapi",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverlkelly/socialnetworkapi.git"
+  },
+  "author": "Oliver Liam Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliverlkelly/socialnetworkapi/issues"
+  },
+  "homepage": "https://github.com/oliverlkelly/socialnetworkapi#readme"
+}
