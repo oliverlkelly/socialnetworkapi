@@ -1,4 +1,107 @@
-const firstNames = [];
+const firstNames = [
+    'olivia',
+    'emily',
+    'isla',
+    'freya',
+    'ella',
+    'amelia',
+    'ava',
+    'sophie',
+    'grace',
+    'millie',
+    'lily',
+    'sophia',
+    'charlotte',
+    'rosie',
+    'aria',
+    'evie',
+    'maisie',
+    'lucy',
+    'mia',
+    'eilidh',
+    'ellie',
+    'ivy',
+    'orla',
+    'jessica',
+    'harper',
+    'maya',
+    'willow',
+    'georgia',
+    'daisy',
+    'sofia',
+    'mila',
+    'isabella',
+    'ruby',
+    'hannah',
+    'skye',
+    'sienna',
+    'molly',
+    'hallie',
+    'bonnie',
+    'poppy',
+    'eva',
+    'esme',
+    'anna',
+    'ayla',
+    'erin',
+    'callie',
+    'zara',
+    'layla',
+    'emma',
+    'robyn',
+    'chloe',
+    'jack',
+    'noah',
+    'leo',
+    'oliver',
+    'harris',
+    'finlay',
+    'lewis',
+    'james',
+    'rory',
+    'alexander',
+    'brodie',
+    'alfie',
+    'charlie',
+    'theo',
+    'archie',
+    'lucas',
+    'mason',
+    'finn',
+    'thomas',
+    'freddie',
+    'max',
+    'logan',
+    'harry',
+    'jacob',
+    'blake',
+    'luca',
+    'oscar',
+    'jude',
+    'william',
+    'caleb',
+    'roman',
+    'cameron',
+    'jaxon',
+    'adam',
+    'joshua',
+    'ollie',
+    'tommy',
+    'daniel',
+    'ethan',
+    'harrison',
+    'luke',
+    'arthur',
+    'muhammad',
+    'jamie',
+    'liam',
+    'reuben',
+    'arlo',
+    'grayson',
+    'hunter',
+    'kai',
+    'aaron'
+];
 const lastNames = [
     'elsher',
     'solace',
@@ -10,86 +113,46 @@ const lastNames = [
     'hansley',
     'cromwell',
     'ashley',
-
-11. Monroe
-
-12. West
-
-13. Langley
-
-14. Daughtler
-
-15. Madison
-
-16. Marley
-
-17. Ellis
-
-18. Hope
-
-19. Cassidy
-
-20. Lopez
-
-21. Jenkins
-
-22. Poverly
-
-23. McKenna
-
-24. Gonzales
-
-25. Keller
-
-1. Collymore
-
-2. Stoll
-
-3. Verlice
-
-4. Adler
-
-5. Huxley
-
-6. Ledger
-
-7. Hayes
-
-8. Ford
-
-9. Finnegan
-
-10. Beckett
-
-11. Gatlin
-
-12. Pierce
-
-13. Zimmerman
-
-14. Dawson
-
-15. Wilson
-
-16. Adair
-
-17. Gray
-
-18. Curran
-
-19. Crassus
-
-20. Anderson
-
-21. Adams
-
-22. Carter
-
-23. Hendrix
-
-24. Lennon
-
-25. Gasper
+    'monroe',
+    'west',
+    'langley',
+    'daughtler',
+    'madison',
+    'marley',
+    'ellis',
+    'hope',
+    'cassidy',
+    'lopez',
+    'jenkins',
+    'poverly',
+    'mckenna',
+    'gonzales',
+    'keller',
+    'collymore',
+    'stoll',
+    'verlice',
+    'adler',
+    'huxley',
+    'ledger',
+    'hayes',
+    'ford',
+    'finnegan',
+    'beckett',
+    'gatlin',
+    'pierce',
+    'zimmerman',
+    'dawson',
+    'wilson',
+    'adair',
+    'gray',
+    'curran',
+    'crassus',
+    'anderson',
+    'adams',
+    'carter',
+    'hendrix',
+    'lennon',
+    'casper'
 ];
 const emails = [
     '@gmail.com',
