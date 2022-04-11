@@ -41,5 +41,3 @@ userSchema
 const User = model('user', userSchema);
 
 module.exports = User;
-
-//match: [/.+@.+\..+/, 'Must match an email address!'],
