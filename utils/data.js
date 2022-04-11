@@ -174,8 +174,9 @@ const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 const getRandomUser = () => {
     const fName = getRandomArrItem(firstNames);
     const lName = getRandomArrItem(lastNames);
-    const email = `${fName}.${lName}${getRandomArrItem(emails)}`;
-    return { fName, lName, email };
+    const uName = `${fName}.${lName}`
+    const email = `${uName}${getRandomArrItem(emails)}`;
+    return { uName, email };
 }
 
 module.exports = { getRandomUser };
