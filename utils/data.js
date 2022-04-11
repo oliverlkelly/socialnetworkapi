@@ -166,7 +166,16 @@ const emails = [
     '@example.com'
 ];
 
-const users = [];
+const thoughts = [
+    ' had a thought!',
+    ' really likes Octocats.',
+    ' wonders what its like to dream.',
+    ' needs a hug, desperately',
+    " doesn't know how to dance?",
+    ' was swallowed by a whale!',
+    ' has a pet cricket.',
+    ' wants to be a real child!'
+];
 
 // Get a random item given an array
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -179,4 +188,21 @@ const getRandomUser = () => {
     return { uName, email };
 }
 
-module.exports = { getRandomUser };
+const getRandomThoughts = (user) => {
+    const rand = Math.floor(Math.random() * 3);
+    let result = [];
+    for(let i=0; i<rand; i++){
+        const end = getRandomArrItem(thoughts);
+        const name = getRandomArrItem(firstNames);
+        result.push(
+            {
+                thoughtText: `${name}${end}`,
+                username: `${user.username}`,
+                email: `${user.email}`
+            }
+        )
+    }
+    return result;
+}
+
+module.exports = { getRandomUser, getRandomThoughts };
