@@ -16,23 +16,25 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   createThought(req, res) {
-    User.findOne({ _id: req.body.userId }).then((user) => {
-      if (!user) {
-        res.status(404).json({ message: "No user with that ID" });
-      }
-      Thought.create(req.body)
-        .then((thought) => {
-          return User.findOneAndUpdate(
-            { _id: req.body.userId },
-            { $addToSet: { thoughts: thought._id } },
-            { new: true }
-          );
-        })
+    User.findOne({ _id: req.body.userId })
+      .then((user) => !user 
+        ? res.status(404).json({ message: "No user with that ID" })
+        : Thought.create(req.body)
+          .then((thought) => {
+            User.findOneAndUpdate(
+              { _id: req.body.userId },
+              { $addToSet: { thoughts: thought._id } },
+              { new: true }
+            ).then((user) => {
+            res.status(200);
+            res.json(thought);
+            });
+          })
+        )
         .catch((err) => {
           console.log(err);
           res.status(500).json(err);
         });
-    });
   },
   updateThought(req, res) {
     Thought.findOneAndUpdate(
