@@ -20,7 +20,7 @@ This project can be run on the local environment by cloning the codebase and run
 
 This codebase is a functional API that can create and manipulate "users", adding friends, thoughts and reactions. It can be used with an app like Insomia to perform the calls on the given seed data, which is itself randomised.
 
-You can see the routes in action via this link:
+You can see the routes in action via this link: https://drive.google.com/file/d/1qLvFCMkbJi-Bi8rzJoFQ6uAvMbg6wVUe/view
 
 ## Credits
 
