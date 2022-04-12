@@ -25,7 +25,11 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   editUser(req, res) {
-    User.findOneAndUpdate(req.body)
+    User.findOneAndUpdate(
+      { _id: req.params.userId },
+      { name: req.body.name, email: req.body.email },
+      { runValidators: true, new: true }
+    )
         .then((user) => res.json(user))
         .catch((err) => res.status(500).json(err));
   },
