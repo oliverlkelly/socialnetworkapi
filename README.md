@@ -1,7 +1,7 @@
 # Social Network API
 
-## The Problem
-It can be really hard to build habits, and people often fail if not provided with the right insentives. What is better than competition!
+## Task
+To create a fun ctional social network api.
 
 ## Outcomes
 This project allowed me to learn more about the following;
